@@ -93,7 +93,13 @@ class DeepSpeedPPOTrainer():
                 prompts,
                 attention_mask=mask,
                 max_length=max_min_length,
-                pad_token_id=self.tokenizer.pad_token_id,
+                #pad_token_id=self.tokenizer.pad_token_id,
+                ###
+                pad_token_id = 0,
+                bos_token_id = 1,
+                eos_token_id = 2,
+                repetition_penalty=1.1,
+                ###
                 synced_gpus=self.z3_enabled,
                 **kwargs)
 
