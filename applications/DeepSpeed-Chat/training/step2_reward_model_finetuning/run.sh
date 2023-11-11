@@ -28,7 +28,6 @@ deepspeed main.py \
    --learning_rate 9e-6 \
    --weight_decay 0.1 \
    --num_train_epochs 1 \
-   --disable_dropout \
    --gradient_accumulation_steps 16 \
    --lr_scheduler_type cosine \
    --num_warmup_steps 0 \
