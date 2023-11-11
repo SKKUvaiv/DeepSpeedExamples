@@ -38,4 +38,5 @@ deepspeed main.py \
    --tensorboard_path $OUTPUT \
    --zero_stage $ZERO_STAGE \
    --deepspeed \
+   --eval_iters 2000 \
    --output_dir $OUTPUT
